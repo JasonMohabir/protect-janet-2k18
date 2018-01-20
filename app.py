@@ -1,43 +1,28 @@
-# Example 2: adds user input and detects intents.
+from flask import Flask, render_template, request
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer
 
-import watson_developer_cloud
+app = Flask(__name__)
 
-# Set up Conversation service.
-conversation = watson_developer_cloud.ConversationV1(
-  username = 'b4020613-3c01-4ac1-a7b7-53beb6db9d60', # replace with username from service key
-  password = 'ReK6XW6CdrlN', # replace with password from service key
-  version = '2017-05-26'
-)
-workspace_id = '6779e2fd-ab9e-47a0-84f8-7a155f568790' # replace with workspace ID
+english_bot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
 
-# Initialize with empty value to start the conversation.
-user_input = ''
-context = {}
+english_bot.set_trainer(ChatterBotCorpusTrainer)
+english_bot.train("chatterbot.corpus.english")
 
-# Main input/output loop
-while True:
-
-  # Send message to Conversation service.
-  response = conversation.message(
-    workspace_id = workspace_id,
-    input = {
-      'text': user_input
-    },
-    context = context
-  )
-  
-  # If an intent was detected, print it to the console.
-  if response['intents']:
-    print('Detected intent: #' + response['intents'][0]['intent'])
-
-  # Print the output from dialog, if any.
-  if response['output']['text']:
-    print(response['output']['text'][0])
-
-  context = response['context']
-
-  # Prompt for next round of input.
-  user_input = input('>> ')
+#english_bot.set_trainer(UbuntuCorpusTrainer)
+#english_bot.train("chatterbot.corpus.english")
 
 
+@app.route("/")
+def home():
+    return render_template("index.html")
 
+@app.route("/get")
+def get_bot_response():
+    userText = request.args.get('msg')
+    return str(english_bot.get_response(userText))
+
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
