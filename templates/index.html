@@ -22,6 +22,7 @@
         <input id="textInput" type="text" name="msg" placeholder="Message">
         <input id="buttonInput" type="submit" value="Send">
       </div>
+
       <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
@@ -30,8 +31,10 @@
           $("#chatbox").append(userHtml);
           document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           $.get("/get", { msg: rawText }).done(function(data) {
+            responsiveVoice.speak(data);
             var botHtml = '<p class="botText"><span>' + data + '</span></p>';
             $("#chatbox").append(botHtml);
+
             document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           });
         }
@@ -44,6 +47,7 @@
           getBotResponse();
         })
       </script>
+      <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     </div>
   </body>
 </html>
