@@ -4,28 +4,34 @@ from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer, Li
 
 app = Flask(__name__)
 
+<<<<<<< HEAD
+english_bot = ChatBot("Chatterbot", 
+                      storage_adapter="chatterbot.storage.MongoDatabaseAdapter",
+=======
 english_bot = ChatBot("Chatterbot",
                       storage_adapter="chatterbot.storage.SQLStorageAdapter",
+>>>>>>> af7077c268b8e94e2e7687a0285fc6c2a63b5ef1
                       logic_adapters=[
         {
             'import_path': 'chatterbot.logic.BestMatch'
-            },
+            }
+
         ]
                       )
 
-#english_bot.set_trainer(ChatterBotCorpusTrainer)
-#english_bot.train("chatterbot.corpus.english")
+english_bot.set_trainer(ChatterBotCorpusTrainer)
+english_bot.train("chatterbot.corpus.english")
 
 english_bot.set_trainer(ListTrainer)
 
 english_bot.train([
     "Hi there!",
-    "Hello Jason."
+    "Hello Jason. Or James. Or Janet. Or Katherine."
 ])
 
 english_bot.train([
     "I hate how slow the Internet is at PennApps!",
-    "Dumb bitch we didn't have the internet back in the day."
+    "We didn't have the internet back in the day. The internet was invented in the 80s!"
 ])
 
 english_bot.train([
@@ -35,24 +41,42 @@ english_bot.train([
 
 english_bot.train([
     "My hair won't stay in place",
+<<<<<<< HEAD
+    "Well that thing you call hairspray actually drilled a hole in the ozone layer that to this day we are trying to fix!"
+=======
     "Try hairspray <br> <img src='https://media.giphy.com/media/cGbv1fFtBCazu/giphy.gif' height='200' width='200'/>"
+>>>>>>> af7077c268b8e94e2e7687a0285fc6c2a63b5ef1
 ])
 
 english_bot.train([
     "I forgot to bring my phone",
+<<<<<<< HEAD
+    "We didnt have mobile phones until 1973 when motorola created the first one <img src='http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg' />",
+    "How did you call people before then?",
+    "We had to make sure nobody else was on the line on our home phones..."
+=======
     "We didnt have mobile phones until 1973 when motorola created the first one <br><img src='http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg' height='200' width='200'/>",
     "How did you call people before then?",
     "We had to make sure nobody else was on the line on our home phones <img src='https://media.giphy.com/media/O56JjOpDoljTG/giphy.gif' height='200' width='200'/>"
+>>>>>>> af7077c268b8e94e2e7687a0285fc6c2a63b5ef1
 ])
 
 english_bot.train([
     "Sorry I only have a dollar",
+<<<<<<< HEAD
+    "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game."
+=======
     "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game <br><img src='https://media.giphy.com/media/S9Mrff51UB2Fi/giphy.gif' height='200' width='200'/>"
+>>>>>>> af7077c268b8e94e2e7687a0285fc6c2a63b5ef1
 ])
 
 english_bot.train([
     "My legs are cold",
+<<<<<<< HEAD
+    "Try legwarmers, they look great."
+=======
     "Try legwarmers <br> <img src='https://media.giphy.com/media/p6M8zPGJvOwYU/giphy.gif' height='200' width='200'/>"
+>>>>>>> af7077c268b8e94e2e7687a0285fc6c2a63b5ef1
 ])
 
 english_bot.train([
@@ -87,11 +111,39 @@ english_bot.train([
 
 english_bot.train([
     "The price of bitcoin has dropped.",
-    "What's a bitcoin? <br> <img src='https://i.giphy.com/media/ySj7uxLzEIumQ/giphy.webp' height='200' width='200'/>"
+    "What's a bitcoin? <br> <img src='https://media.giphy.com/media/ySj7uxLzEIumQ/giphy.gif' height='200' width='200'/>"
 ])
 
-#english_bot.set_trainer(UbuntuCorpusTrainer)
-#english_bot.train("chatterbot.corpus.english")
+english_bot.train([
+"My laptop is dying...but my charger is all the way upstairs.",
+"Okay, but in the 80s laptops didn't exist. They were just large thick computers."
+"Thick computers?.",
+"Yeah, as the young generation says 'large bois'."   
+])
+
+
+english_bot.train([
+"What is your political affliation?.",
+"I am neither a liberal or a conservative. I just am."
+])
+
+english_bot.train([
+"Thoughts on the wall.",
+"The Berlin Wall obviously needs to come down!"
+])
+
+
+english_bot.train([
+"Favorite boyband?",
+"BACKSTREET's BACK ALRIGHT"
+])
+
+
+english_bot.train([
+"Where do you want to travel?",
+"I would say the Oregon Trail, but I don't to die of dysentery"
+])
+
 
 
 @app.route("/")
