@@ -11,16 +11,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   </head>
-  <body style="margin-top: 130px; margin-right: 210px; background-image: url(static/images/retro.jpg)">
-    <h1>Deborah Downer: Retro First World Problems</h1>
-    <div>
-      <div id="chatbox">
-        <p class="botText"><span>Hi! I'm Deborah Downer.</span></p>
+  <body style="margin-right: 210px; background-image: url('static/images/retro.jpg')">
+    <div class="container">
+    <img src='static/images/old_tv_empty_screen.png' style="width:100%">
+
+      <div class="centered">
+	<h1>Deborah Downer: Retro First World Problems</h1>
+	<div id="chatbox">
+	  <p class="botText"><span>Hi! I'm Deborah Downer.</span></p>
+	</div>
+	<div id="userInput">
+          <input id="textInput" type="text" name="msg" placeholder="Message">
+          <input id="buttonInput" type="submit" value="Send">
+	</div>
       </div>
-      <div id="userInput">
-        <input id="textInput" type="text" name="msg" placeholder="Message">
-        <input id="buttonInput" type="submit" value="Send">
-      </div>
+    </div>
 
       <script>
         function getBotResponse() {
