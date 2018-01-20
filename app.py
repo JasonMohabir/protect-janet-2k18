@@ -92,7 +92,7 @@ english_bot.train([
 
 english_bot.train([
     "The price of bitcoin has dropped.",
-    "What's a bitcoin? <br> <img src='https://media.giphy.com/media/ySj7uxLzEIumQ/giphy.gif' height='200' width='200'/>"
+    "What's a bitcoin? <br> <img src='https://i.giphy.com/media/ySj7uxLzEIumQ/giphy.webp' height='200' width='200'/>"
 ])
 
 #english_bot.set_trainer(UbuntuCorpusTrainer)
