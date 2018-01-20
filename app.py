@@ -4,7 +4,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer, Li
 
 app = Flask(__name__)
 
-english_bot = ChatBot("Chatterbot", 
+english_bot = ChatBot("Chatterbot",
                       storage_adapter="chatterbot.storage.SQLStorageAdapter",
                       logic_adapters=[
         {
@@ -45,7 +45,7 @@ english_bot.train([
 
 english_bot.train([
     "I forgot to bring my phone",
-    "We didnt have mobile phones until 1973 when motorola created the first one http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg",
+    "We didnt have mobile phones until 1973 when motorola created the first one <br><img src='http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg' height='200' width='200'/>",
     "How did you call people before then?",
     "We had to make sure nobody else was on the line on our home phones"
 ])
