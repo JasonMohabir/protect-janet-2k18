@@ -92,7 +92,7 @@ english_bot.train([
 
 english_bot.train([
 "My laptop is dying...but my charger is all the way upstairs.",
-"Okay, but in the 80s laptops didn't exist. They were just large thick computers. <br> <img src='https://media3.giphy.com/media/uhhEKTfedQowM/giphy.gif' height='200' width='200'/>"
+"Okay, but in the 80s laptops didn't exist. They were just large thick computers. <br> <img src='https://media3.giphy.com/media/uhhEKTfedQowM/giphy.gif' height='200' width='200'/>",
 "Thick computers?.",
 "Yeah, as the young generation says 'large bois'."
 ])
