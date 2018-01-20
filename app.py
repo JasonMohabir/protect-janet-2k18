@@ -35,29 +35,29 @@ english_bot.train([
 
 english_bot.train([
     "Cigarette ads are so repetitive",
-    "Cigarettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's."
+    "Cigarettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's. <img src='https://gph.is/2djIxyr' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "My hair won't stay in place",
-    "Try hairspray"
+    "Try hairspray <br> <img src='https://gph.is/10o4ul7' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "I forgot to bring my phone",
     "We didnt have mobile phones until 1973 when motorola created the first one <br><img src='http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg' height='200' width='200'/>",
     "How did you call people before then?",
-    "We had to make sure nobody else was on the line on our home phones"
+    "We had to make sure nobody else was on the line on our home phones <img src='https://gph.is/1JcLco5' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "Sorry I only have a dollar",
-    "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game"
+    "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game <br><img src='https://gph.is/2dbdgP4' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "My legs are cold",
-    "Try legwarmers"
+    "Try legwarmers <br> <img src='https://gph.is/1CmGo9s' height='200' width='200'/>"
 ])
 
 english_bot.train([
@@ -87,12 +87,12 @@ english_bot.train([
 
 english_bot.train([
     "my phone sucks. my friend isn't picking up.",
-    "Actually, in the 80s... < img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/17/enhanced/webdr11/anigif_enhanced-668-1442438900-2.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
+    "Actually, in the 80s... <img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/17/enhanced/webdr11/anigif_enhanced-668-1442438900-2.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "The price of bitcoin has dropped.",
-    "What's a bitcoin?"
+    "What's a bitcoin? <br> <img src='https://gph.is/2CbYX8n' height='200' width='200'/>"
 ])
 
 #english_bot.set_trainer(UbuntuCorpusTrainer)
