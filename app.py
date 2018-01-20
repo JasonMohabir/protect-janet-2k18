@@ -13,8 +13,8 @@ english_bot = ChatBot("Chatterbot",
         ]
                       )
 
-#english_bot.set_trainer(ChatterBotCorpusTrainer)
-#english_bot.train("chatterbot.corpus.english")
+english_bot.set_trainer(ChatterBotCorpusTrainer)
+english_bot.train("chatterbot.corpus.english")
 
 english_bot.set_trainer(ListTrainer)
 
@@ -25,7 +25,7 @@ english_bot.train([
 
 english_bot.train([
     "I hate how slow the Internet is at PennApps!",
-    "Dumb bitch we didn't have the internet back in the day."
+    "We didn't have the internet back in the day. The internet was invented in the 80s!"
 ])
 
 english_bot.train([
@@ -90,8 +90,35 @@ english_bot.train([
     "What's a bitcoin? <br> <img src='https://i.giphy.com/media/ySj7uxLzEIumQ/giphy.webp' height='200' width='200'/>"
 ])
 
-#english_bot.set_trainer(UbuntuCorpusTrainer)
-#english_bot.train("chatterbot.corpus.english")
+english_bot.train([
+"My laptop is dying...but my charger is all the way upstairs.",
+"Okay, but in the 80s laptops didn't exist. They were just large thick computers. <br> <img src='https://media3.giphy.com/media/uhhEKTfedQowM/giphy.gif' height='200' width='200'/>"
+"Thick computers?.",
+"Yeah, as the young generation says 'large bois'."
+])
+
+
+english_bot.train([
+"What is your political affliation?.",
+"I am neither a liberal or a conservative. I just am."
+])
+
+english_bot.train([
+"Thoughts on the wall.",
+"The Berlin Wall obviously needs to come down! <br> <img src='https://media2.giphy.com/media/OSSau8Of5cTU4/giphy.gif' height='200' width='200'/>"
+])
+
+
+english_bot.train([
+"Favorite boyband?",
+"BACKSTREET's BACK ALRIGHT <br> <img src='https://media1.giphy.com/media/QeV4btXfSBWHm/giphy.gif' height='200' width='200'/>"
+])
+
+
+english_bot.train([
+"Where do you want to travel?",
+"I would say the Oregon Trail, but I don't to die of dysentery <br> <img src='https://media0.giphy.com/media/11iuRh95rGa7G8/giphy.gif' height='200' width='200'/>"
+])
 
 
 @app.route("/")
