@@ -4,7 +4,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer, Li
 
 app = Flask(__name__)
 
-english_bot = ChatBot("Chatterbot",
+english_bot = ChatBot("Chatterbot", 
                       storage_adapter="chatterbot.storage.SQLStorageAdapter",
                       logic_adapters=[
         {
@@ -31,6 +31,43 @@ english_bot.train([
 english_bot.train([
     "I hate how slow the Internet is at PennApps!",
     "Dumb bitch we didn't have the internet back in the day."
+])
+
+english_bot.train([
+    "Cigerette ads are so repetitive",
+    "Cigerettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's."
+])
+
+english_bot.train([
+    "Cigerette ads are so repetitive",
+    "Cigerettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's, and doctors also supported the industry."
+])
+
+english_bot.train([
+    "My hair won't stay in place",
+    "Try hairpsray"
+])
+
+english_bot.train([
+    "I forgot to bring my phone",
+    "We didnt have mobile phones until",
+    "How did you call people then?",
+    "We had to make sure nobody else was on the line on our home phones"
+])
+
+english_bot.train([
+    "Sorry I only have a dollar",
+    "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game"
+])
+
+english_bot.train([
+    "My legs are cold",
+    "Try legwarmers"
+])
+
+english_bot.train([
+    "My crush won't notice me at the dance",
+    "Try wearing bright neon tights, wearing heavy makeup, and making your hair look big"
 ])
 
 english_bot.train([
