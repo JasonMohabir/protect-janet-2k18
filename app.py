@@ -4,8 +4,8 @@ from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer, Li
 
 app = Flask(__name__)
 
-english_bot = ChatBot("Chatterbot", 
-                      storage_adapter="chatterbot.storage.MongoDatabaseAdapter",
+english_bot = ChatBot("Chatterbot",
+                      storage_adapter="chatterbot.storage.SQLStorageAdapter",
                       logic_adapters=[
         {
             'import_path': 'chatterbot.logic.BestMatch'
@@ -31,29 +31,32 @@ english_bot.train([
 
 english_bot.train([
     "Cigarette ads are so repetitive",
-    "Cigarettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's."
+    "Cigarettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's. <img src='https://media.giphy.com/media/m3OlZqIqxN22Q/giphy.gif' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "My hair won't stay in place",
-    "Well that thing you call hairspray actually drilled a hole in the ozone layer that to this day we are trying to fix!"
+    "Well that thing you call hairspray actually drilled a hole in the ozone layer that to this day we are trying to fix! Try hairspray <br> <img src='https://media.giphy.com/media/cGbv1fFtBCazu/giphy.gif' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "I forgot to bring my phone",
-    "We didnt have mobile phones until 1973 when motorola created the first one <img src='http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg' />",
+
+    "We didnt have mobile phones until 1973 when motorola created the first one <br><img src='http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg' height='200' width='200'/>",
     "How did you call people before then?",
-    "We had to make sure nobody else was on the line on our home phones..."
+    "We had to make sure nobody else was on the line on our home phones <img src='https://media.giphy.com/media/O56JjOpDoljTG/giphy.gif' height='200' width='200'/>"
+
 ])
 
 english_bot.train([
     "Sorry I only have a dollar",
-    "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game."
+    "A dollar! That could buy you 4 gallons of gas, 1 pound of coffee, 4 books, 2 movie tickets, a week's worth of subway fares, half-a-dozen packs of cigarettes, or a ticket to the MLB All-Star game <br><img src='https://media.giphy.com/media/S9Mrff51UB2Fi/giphy.gif' height='200' width='200'/>"
+
 ])
 
 english_bot.train([
     "My legs are cold",
-    "Try legwarmers, they look great."
+    "Try legwarmers <br> <img src='https://media.giphy.com/media/p6M8zPGJvOwYU/giphy.gif' height='200' width='200'/>"
 ])
 
 english_bot.train([
@@ -83,12 +86,12 @@ english_bot.train([
 
 english_bot.train([
     "my phone sucks. my friend isn't picking up.",
-    "Actually, in the 80s... < img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/17/enhanced/webdr11/anigif_enhanced-668-1442438900-2.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
+    "Actually, in the 80s... <img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/17/enhanced/webdr11/anigif_enhanced-668-1442438900-2.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
 ])
 
 english_bot.train([
     "The price of bitcoin has dropped.",
-    "What's a bitcoin?"
+    "What's a bitcoin? <br> <img src='https://media.giphy.com/media/ySj7uxLzEIumQ/giphy.gif' height='200' width='200'/>"
 ])
 
 english_bot.train([
