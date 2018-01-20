@@ -4,7 +4,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer, Li
 
 app = Flask(__name__)
 
-english_bot = ChatBot("Chatterbot", 
+english_bot = ChatBot("Chatterbot",
                       storage_adapter="chatterbot.storage.SQLStorageAdapter",
                       logic_adapters=[
         {
@@ -36,6 +36,26 @@ english_bot.train([
 english_bot.train([
     "Who are you?",
     "I am Deborah Downer, a Chatbot created by team NYC++ at PennApps Spring 2018."
+])
+
+english_bot.train([
+    "i want more likes on my profile picture",
+    "<img src='https://static.boredpanda.com/blog/wp-content/uploads/2014/12/satiric-illustrations-john-holcroft-1.jpg' height='200' width='200' />"
+])
+
+english_bot.train([
+    "i like to drink too much. convince me to stop drinking",
+    "<img src='https://static.boredpanda.com/blog/wp-content/uploads/2014/12/satiric-illustrations-john-holcroft-2.jpg' height='200' width='200'/>"
+])
+
+english_bot.train([
+    "I hate having to wait. i dont want to wait for ads",
+    "Actually, in the 80s, if you forget to rewind the video you wanted to watch you'd have to wait five whole minutes. <img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/19/enhanced/webdr10/anigif_enhanced-17916-1442447274-7.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
+])
+
+english_bot.train([
+    "my phone sucks. my friend isn't picking up.",
+    "Actually, in the 80s... < img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/17/enhanced/webdr11/anigif_enhanced-668-1442438900-2.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
 ])
 
 #english_bot.set_trainer(UbuntuCorpusTrainer)
