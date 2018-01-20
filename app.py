@@ -34,24 +34,19 @@ english_bot.train([
 ])
 
 english_bot.train([
-    "Cigerette ads are so repetitive",
-    "Cigerettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's."
-])
-
-english_bot.train([
-    "Cigerette ads are so repetitive",
-    "Cigerettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's, and doctors also supported the industry."
+    "Cigarette ads are so repetitive",
+    "Cigarettes were actually advertised with health benefits such as weight loss and women magnets before the 1950's."
 ])
 
 english_bot.train([
     "My hair won't stay in place",
-    "Try hairpsray"
+    "Try hairspray"
 ])
 
 english_bot.train([
     "I forgot to bring my phone",
-    "We didnt have mobile phones until",
-    "How did you call people then?",
+    "We didnt have mobile phones until 1973 when motorola created the first one http://i.dailymail.co.uk/i/pix/2014/12/30/245448D600000578-2891479-image-a-65_1419960545894.jpg",
+    "How did you call people before then?",
     "We had to make sure nobody else was on the line on our home phones"
 ])
 
@@ -93,6 +88,11 @@ english_bot.train([
 english_bot.train([
     "my phone sucks. my friend isn't picking up.",
     "Actually, in the 80s... < img src='https://img.buzzfeed.com/buzzfeed-static/static/2015-09/16/17/enhanced/webdr11/anigif_enhanced-668-1442438900-2.gif?downsize=715:*&output-format=auto&output-quality=auto' height='200' width='200'/>"
+])
+
+english_bot.train([
+    "The price of bitcoin has dropped.",
+    "What's a bitcoin?"
 ])
 
 #english_bot.set_trainer(UbuntuCorpusTrainer)
