@@ -111,7 +111,7 @@ english_bot.train([
 
 english_bot.train([
 "Favorite boyband?",
-"BACKSTREET's BACK ALRIGHT <br> <img src='https://media1.giphy.com/media/QeV4btXfSBWHm/giphy.gif' height='200' width='200'/>"
+"Backstreets back alright <br> <img src='https://media1.giphy.com/media/QeV4btXfSBWHm/giphy.gif' height='200' width='200'/>"
 ])
 
 

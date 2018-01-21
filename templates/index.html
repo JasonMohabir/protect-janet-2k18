@@ -28,12 +28,16 @@
       <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
-        
+
           var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
           document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           $.get("/get", { msg: rawText }).done(function(data) {
+            if (rawText.indexOf("boyband")>0){
+              var audio = new Audio('static/music/backstreetbois.mp3');
+              audio.play();
+            }
             if (data.indexOf("<br") > -1){
             responsiveVoice.speak(data.substring(0, data.indexOf("<br")));
           }
