@@ -6,9 +6,12 @@
 -->
 <title>Retro Deborah Downer</title>
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
+<link rel="stylesheet" type="text/js" href="static/js/script.js">
 <link rel="stylesheet" type="text/css" href="static/css/fonts/fonts.css" />
+
 <!--<link rel="stylesheet" type="text/css" href="static/css/retro.css">-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -30,12 +33,16 @@
       <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
-        
+
           var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
           document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           $.get("/get", { msg: rawText }).done(function(data) {
+            if (rawText.indexOf("boyband")>0){
+              var audio = new Audio('static/music/backstreetbois.mp3');
+              audio.play();
+            }
             if (data.indexOf("<br") > -1){
             responsiveVoice.speak(data.substring(0, data.indexOf("<br")));
           }
@@ -61,6 +68,8 @@
         })
       </script>
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     </div>
   </body>
 </html>
