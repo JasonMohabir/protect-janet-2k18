@@ -16,6 +16,7 @@ body{
   width: 800px;
   height: 550px;
   border-radius: 3px;
+	overflow:scroll;
 }
 
 h1 {

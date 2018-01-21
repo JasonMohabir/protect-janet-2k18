@@ -117,7 +117,7 @@ english_bot.train([
 
 english_bot.train([
 "Where do you want to travel?",
-"I would say the Oregon Trail, but I don't to die of dysentery <br> <img src='https://media0.giphy.com/media/11iuRh95rGa7G8/giphy.gif' height='200' width='200'/>"
+"I would say the Oregon Trail, but I don't to die of dysentery <br> <img src='https://i.giphy.com/media/11iuRh95rGa7G8/giphy.webp' height='200' width='200'/>"
 ])
 
 
