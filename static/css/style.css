@@ -1,8 +1,12 @@
 body{
-    background-image: url(../images/tv.png);
+    background-image: url(../images/tv_resize.png);
     background-repeat:no-repeat;
     background-size: cover;
     overflow: hidden;
+    margin-top: 14vh !important;
+    margin-bottom: 14vh !important;
+    margin-left: 10vw !important;
+    margin-right: 28vw !important;
 }
 
 
@@ -12,9 +16,6 @@ body{
 
 {
   position: absolute;    
-  margin-top: 14vh !important;
-  margin-left: 10vw !important;
-  margin-right: 28vw !important;
   top: 10px;
   right: 0;
   bottom: 0;
@@ -25,9 +26,6 @@ body{
 
 h1 {
 		color: #00ff00 !important;
-        margin-top: 14vh !important;
-        margin-left: 10vw !important;
-        margin-right: 28vw !important;
     text-align: center;
     font-family: 'VT323', monospace !important;
     font-size: 40px;
@@ -53,10 +51,8 @@ h3 {
 		color: #00ff00;
 		padding: 8px;
         font-family: courier new;
+        margin-top: 14vh !important;
         
-  position: absolute;
-  margin-left: 10vw !important;
-  margin-right: 28vw !important;
 }
 
 #textInput {
@@ -98,6 +94,9 @@ h3 {
 
 .botText {
     color: white;
+    margin-top: 14vh !important;
+    margin-left: 10vw !important;
+    margin-right: 28vw !important;
     font-family: monospace;
     font-size: 17px;
     text-align: left;
