@@ -12,11 +12,12 @@ body{
   top: 10px;
   right: 0;
   bottom: 0;
-  left: -250px;
+  left: 0px;
   width: 800px;
   height: 550px;
   border-radius: 3px;
 	overflow:scroll;
+	background-color: #000;
 }
 
 h1 {
@@ -37,8 +38,15 @@ h3 {
 #chatbox {
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    margin-top: 60px;
+    width: 100%;
+
+
+    background-color: #000;
+    border: 1px solid #000;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
+
 }
 
 #userInput {
@@ -46,6 +54,11 @@ h3 {
     margin-right: auto;
     width: 80%;
     margin-top: 60px;
+		background-color: #000;
+		border: 1px solid #000;
+		color: #00ff00;
+		padding: 8px;
+		font-family: courier new;
 }
 
 #textInput {
@@ -54,6 +67,11 @@ h3 {
     border-bottom: 3px solid #009688;
     font-family: monospace;
     font-size: 17px;
+		background-color: #000;
+		border: 1px solid #000;
+		color: #00ff00;
+		padding: 8px;
+		font-family: courier new;
 }
 
 #buttonInput {
@@ -74,6 +92,11 @@ h3 {
     background-color: #009688;
     padding: 10px;
     border-radius: 2px;
+		background-color: #000;
+		border: 1px solid #000;
+		color: #00ff00;
+		padding: 8px;
+		font-family: courier new;
 }
 
 .botText {
@@ -88,6 +111,11 @@ h3 {
     background-color: #EF5350;
     padding: 10px;
     border-radius: 2px;
+		background-color: #000;
+		border: 1px solid #000;
+		color: #00ff00;
+		padding: 8px;
+		font-family: courier new;
 }
 
 #tidbit {
@@ -101,3 +129,4 @@ h3 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
+}
