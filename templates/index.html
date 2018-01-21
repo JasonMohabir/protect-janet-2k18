@@ -30,10 +30,7 @@
       <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
-          if ("boyband" in rawText){
-            var audio = new Audio('static/music/backstreetbois.mp3');
-            audio.play();
-          }
+        
           var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
