@@ -29,6 +29,11 @@ $(function() {
 });
 
 
+function changeScreenSize(w,h)
+{
+  window.resizeTo( w,h )
+}
+
 function getBotResponse() {
     var rawText = $("#textInput").val();
   
