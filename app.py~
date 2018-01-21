@@ -4,7 +4,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer, UbuntuCorpusTrainer, Li
 
 app = Flask(__name__)
 
-english_bot = ChatBot("Chatterbot",read_only=True,
+english_bot = ChatBot("Chatterbot",read_only=False,
                       storage_adapter="chatterbot.storage.SQLStorageAdapter",
                       logic_adapters=[
         {'import_path': 'chatterbot.logic.BestMatch'},

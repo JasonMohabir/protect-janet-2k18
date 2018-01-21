@@ -14,10 +14,13 @@ body{
 
 {
   position: absolute;    
+<<<<<<< Updated upstream
+=======
   margin-top: 150px;
   margin-left: 150px;
   width: 100vh;
   height: 100vh;
+>>>>>>> Stashed changes
   top: 10px;
   right: 0;
   bottom: 0;
