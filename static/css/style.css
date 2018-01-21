@@ -3,6 +3,11 @@ body{
     background-repeat:no-repeat;
     background-size: cover;
     overflow: hidden;
+    margin-top: 14vh !important;
+    margin-bottom: 14vh !important;
+    margin-left: 10vw !important;
+    margin-right: 28vw !important;
+
 }
 
 
@@ -11,8 +16,10 @@ body{
 .center-div
 
 {
-  position: absolute;    
-  margin-top: 14vh !important;
+  position: absolute;  
+
+  margin-top: 20vh !important;
+  margin-bottom: 30vh !important;
   margin-left: 10vw !important;
   margin-right: 28vw !important;
   top: 10px;
@@ -25,9 +32,6 @@ body{
 
 h1 {
 		color: #00ff00 !important;
-        margin-top: 14vh !important;
-        margin-left: 10vw !important;
-        margin-right: 28vw !important;
     text-align: center;
     font-family: 'VT323', monospace !important;
     font-size: 40px;
@@ -42,7 +46,6 @@ h3 {
 
 #chatbox {
     width: 100%;
-    margin-top: 5vh !important;
     color: #00ff00;
     padding: 8px;
     font-family: courier new;
@@ -50,19 +53,18 @@ h3 {
 }
 
 #userInput {
+        margin-top: 40vh !important;
 		color: #00ff00;
 		padding: 8px;
         font-family: courier new;
         
-  position: absolute;
-  margin-left: 10vw !important;
-  margin-right: 28vw !important;
+  position: relative;
 }
 
 #textInput {
+
+    margin-top: 30vh !important;
     width: 90%;
-    border: none;
-    border-bottom: 3px solid #009688;
     font-family: monospace;
     font-size: 17px;
 		background-color: #000;
