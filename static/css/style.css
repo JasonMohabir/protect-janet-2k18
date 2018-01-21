@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/tv.png);
+    background-image: url(../images/tv_resize.png);
     background-repeat:no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -7,7 +7,6 @@ body{
     margin-bottom: 14vh !important;
     margin-left: 10vw !important;
     margin-right: 28vw !important;
-
 }
 
 
@@ -31,7 +30,7 @@ body{
 }
 
 h1 {
-		color: #00ff00 !important;
+	color: #00ff00 !important;
     text-align: center;
     font-family: 'VT323', monospace !important;
     font-size: 40px;
@@ -67,11 +66,11 @@ h3 {
     width: 90%;
     font-family: monospace;
     font-size: 17px;
-		background-color: #000;
-		border: 1px solid #000;
-		color: #00ff00;
-		padding: 8px;
-		font-family: courier new;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
 }
 
 #buttonInput {
@@ -93,9 +92,9 @@ h3 {
 .userText span {
     padding: 10px;
     border-radius: 2px;
-		color: #00ff00;
-		padding: 8px;
-		font-family: courier new;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
 }
 
 .botText {
@@ -109,9 +108,9 @@ h3 {
 .botText span {
     padding: 10px;
     border-radius: 2px;
-		color: #00ff00;
-		padding: 8px;
-		font-family: courier new;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
 }
 
 #tidbit {
