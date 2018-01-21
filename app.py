@@ -20,7 +20,7 @@ english_bot.set_trainer(ListTrainer)
 
 english_bot.train([
     "Hi there!",
-    "Hello Jason."
+    "Hello Jason and James and Janet and Katherine."
 ])
 
 english_bot.train([
@@ -118,6 +118,41 @@ english_bot.train([
 english_bot.train([
 "Where do you want to travel?",
 "I would say the Oregon Trail, but I don't to die of dysentery <br> <img src='https://i.giphy.com/media/11iuRh95rGa7G8/giphy.webp' height='200' width='200'/>"
+])
+
+english_bot.train([
+"What is your name?",
+"My name is Deborah, but people call me Robert"
+])
+
+english_bot.train([
+"Who killed Tupac?",
+"Me."
+])
+
+english_bot.train([
+"Everything is so expensive these days!",
+"Well in Reagonomics, inflation was rampant!"
+])
+
+english_bot.train([
+"Getting health insurance is so hard!",
+"Actually, we just paid out of pocket in the past."
+])
+
+english_bot.train([
+"I'm not matching with anybody on Tinder",
+"Have you tried meeting people in real life?"
+])
+
+english_bot.train([
+"I did not get enough likes on my Instagram post!"
+"Back in the day, our photos could reach only 20 people at max."
+])
+
+english_bot.train([
+"Who are in Star Wars?",
+"Luke Skywalker, Kylo Ren, Han Solo, Princess Leia, Chewbacca, R2D2, CP3O, Darth Vader, Emperor Palpatine, Stormtroopers"
 ])
 
 
