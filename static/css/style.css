@@ -10,24 +10,20 @@ body{
 }
 
 
-.center-div
 
-{
-  position: absolute;    
-  margin-top: 150px;
-  margin-left: 150px;
-  width: 100vh;
-  height: 100vh;
-  top: 10px;
-  right: 0;
-  bottom: 0;
-  left: 0px;
-  border-radius: 3px;
+
+.center-div{
+    position: absolute;    
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    border-radius: 3px;
 	overflow:scroll;
 }
 
 h1 {
-		color: #00ff00 !important;
+	color: #00ff00 !important;
     text-align: center;
     font-family: 'VT323', monospace !important;
     font-size: 40px;
@@ -42,7 +38,10 @@ h3 {
 
 #chatbox {
     width: 100%;
-    margin-top: 5vh !important;
+    margin-top: 20vh !important;
+    margin-bottom: 14vh !important;
+    margin-left: 10vw !important;
+    margin-right: 28vw !important;
     color: #00ff00;
     padding: 8px;
     font-family: courier new;
@@ -50,10 +49,10 @@ h3 {
 }
 
 #userInput {
-		color: #00ff00;
-		padding: 8px;
-        font-family: courier new;
-        margin-top: 14vh !important;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
+    margin-top: 14vh !important;
         
 }
 
@@ -63,11 +62,11 @@ h3 {
     border-bottom: 3px solid #009688;
     font-family: monospace;
     font-size: 17px;
-		background-color: #000;
-		border: 1px solid #000;
-		color: #00ff00;
-		padding: 8px;
-		font-family: courier new;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
 }
 
 #buttonInput {
@@ -89,16 +88,13 @@ h3 {
 .userText span {
     padding: 10px;
     border-radius: 2px;
-		color: #00ff00;
-		padding: 8px;
-		font-family: courier new;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
 }
 
 .botText {
     color: white;
-    margin-top: 14vh !important;
-    margin-left: 10vw !important;
-    margin-right: 28vw !important;
     font-family: monospace;
     font-size: 17px;
     text-align: left;
@@ -108,9 +104,9 @@ h3 {
 .botText span {
     padding: 10px;
     border-radius: 2px;
-		color: #00ff00;
-		padding: 8px;
-		font-family: courier new;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
 }
 
 #tidbit {
